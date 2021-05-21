@@ -3,7 +3,7 @@ class Library:
         self.booksList = lisst
         self.name = name
         self.lendDict = {}
-
+    #Display Books
     def displaybooks(self):
         print(f"\nWe have following books in our library: {self.name}")
         i = 0
@@ -27,7 +27,7 @@ class Library:
     def returnbook(self, book):
         self.lendDict.pop(book)
 
-
+#main
 if __name__ == '__main__':
     list_books = ['Python', 'C', 'C++', 'C#', 'BlueJ']
     Name = input("Enter the name of the library: ")
